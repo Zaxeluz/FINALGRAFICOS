@@ -1,0 +1,14 @@
+#pragma once
+#include "Modelo.h"
+#include "glm\gtx\transform.hpp"
+#include "glm\glm.hpp"
+
+class Basura : public Modelo {
+public:
+	vec3 coordenadas;
+	float angulo;
+	int direccion = 0;
+	float velocidad = 2.0f;
+	Basura();
+	void mover(double tiempoDelta);
+};
